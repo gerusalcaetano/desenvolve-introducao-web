@@ -1,0 +1,23 @@
+html{ 
+    background-color: color: #D92567;
+    color: #A65656; 
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vw;
+    padding: 2rem;
+}
+
+h1 {
+    font-style: #D92567;
+}
+
+p { 
+    font-style: color:#000000 ;
+}
+
+
+
+/* Texto /
