@@ -1,23 +1,35 @@
-html{ 
-    background-color: color: #D92567;
-    color: #A65656; 
-}
-body {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vw;
-    padding: 2rem;
+ /*1)  Aspectos gerais */
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+   
 }
 
-h1 {
-    font-style: #D92567;
+ /*2)  Parágrafo */
+p{
+    text-indent: 1em;
 }
 
-p { 
-    font-style: color:#000000 ;
+ /* 3) Títulos*/
+ h1, h2, h3{
+    text-align: center;
+ }
+h1{font-size: 1.8rem;}
+h2{font-size: 1.4rem;}
+h2{font-size: 1.2rem;}
+
+ /* 4)Seções de resumo e principal*/
+
+ .summary{
+  
+    text-align: right;
+ }
+ .main p{
+ line-height: 1.5;
+}
+abbr{
+    font-variant: small-caps ;
 }
 
-
-
-/* Texto /
