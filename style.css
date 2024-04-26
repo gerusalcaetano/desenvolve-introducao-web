@@ -1,12 +1,144 @@
- /*1)  Aspectos gerais */
-html{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ /*1. Customize a aparência dos links da seguinte forma: 
+- Por padrão, devem ter a cor de destaque e estarem em negrito.
+- Se sobrepostos, devem ter sua cor alterada para uma tonalidade mais clara/escura. Os links visitados não devem ficar mais em negrito.
+
+2. Vamos dar um destaque a primeira letra do primeiro parágrafo da seção principal. Você deverá customizá-lo para que:
+- Tenha tamanho de fonte 3 vezes maior que o padrão.
+- Seja de uma fonte diferente da escolhida para o  site.
+- Fique flutuando a esquerda.
+OBS: você precisará aplicar mais de um pseudo seletor para realizar essa estilização. Fique atento!
+
+3. Utilize bordas para criar um separador entre os itens presentes no menu de design. 
+Aplique uma borda superior no topo de todos os itens de menu. 
+Aplique uma borda inferior apenas no último item da lista
+
+*/
+a{
+   color: green;
+}
+a:hover {
+   color: rgba(0, 128, 0, 0.39);
+}
+.main p:first-of-type:first-letter{
+   font-size: 3em;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+}
+
+.design-selection li {
+   border-top:1px solid greenyellow ;
+   padding-top: 3px;
+}
+.design-selection li:last-child {
+   border-bottom: 1px greenyellow solid;
+   padding-bottom: 3px;
+
+}
+.supporting footer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.benefits{
+   display: flex;
+   border-bottom: 1px black solid;
+   }
+.benefits h3{
+   order:2;
+   align-self: center;
+   flex-basis: 30%
+}
+
+.benefits p{
+   flex-basis: 70%;
+}
+
+.participation{
+   display: flex;
+   flex-wrap: wrap;
+   border-bottom: 1px black solid;
+   border-top: 1px black solid;
+}
+
+.participation h3, p{
+   flex-basis: 50%;
+}
+
+.participation h3{
+   flex-basis: 50%;
+   align-self: center;
+}
+
+.page-wrapper {
+   position: relative;
+    width: 80%;
+    max-width: 1280px;
+    margin:auto;
+
+}
+
+.explanation{
+   width:60%;
+   border-right: 1px solid #1f295c;
+   padding:2%;
+   }
+
+#design-selection{
+   position: absolute;
+   top: 560px;
+   left:62%
+}
+
+
+#zen-intro{
+    height: 550px;
+    
+}
+
+aside ul{
+   list-style-type: none;
+}
+
+aside ul li{
+   margin: 1em;
+   text-align: center;
+ }
+
+ .main footer a {
+    border: solid 2px;
+    padding: 0.5em;
+    display: inline-block;
+
+
+ }
+ html{
+   
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 200;
-   
+ }
+
+ #design-archives{
+    display: none;
+ }
+
+ #zen-intro header{
+    background-color: black;
+    color: white;
+     
 }
 
+#zen-intro header h1,  #zen-intro header h2{
+    display:inline-block
+}
+#zen-intro header h1{ 
+    margin-left: 1em;
+    margin-right: 1em;
+
+
+}
  /*2)  Parágrafo */
 p{
     text-indent: 1em;
